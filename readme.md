@@ -92,7 +92,7 @@ go to the `App.tsx` and place a breakpoint (F9) to the button onclick
 
 [code](./test-app/)
 
-basic skeleton spa                                   |
+basic skeleton spa                                   
 
 ### singleton service app
 
