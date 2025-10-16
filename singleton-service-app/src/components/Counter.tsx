@@ -1,21 +1,23 @@
 import { useMyGlobalSingleton } from "../services/MyGlobalSingleton"
 
 export const Counter = () => {
-    const myGlobal = useMyGlobalSingleton()
+    const cnt = useMyGlobalSingleton(x => x.cnt)
+    const increment = useMyGlobalSingleton(x => x.increment)
+    const incrementAsync = useMyGlobalSingleton(x => x.incrementAsync)
 
     return <div>
         <div>
-            count = {myGlobal.cnt}
+            count = {cnt}
         </div>
 
         <button onClick={() => {
-            myGlobal.increment()
+            increment()
         }}>
             inc
         </button>
 
         <button onClick={async () => {
-            await myGlobal.incrementAsync()
+            await incrementAsync()
         }}>
             async inc
         </button>

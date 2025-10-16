@@ -1,19 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter, Link, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Page1 } from './pages/Page1'
 import { Page2 } from './pages/Page2'
+import { TrackRender } from './components/TrackRender'
 import { useMyGlobalSingleton } from './services/MyGlobalSingleton'
 
 function App() {
-  const myGlobal = useMyGlobalSingleton()
+  const working = useMyGlobalSingleton(x => x.working)
 
   return <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
     <BrowserRouter>
-      <div style={{ display: 'flex', gap: '1rem' }}>
+
+      <div style={{ justifyContent: 'center', display: 'flex', gap: '1rem' }}>
         <Link to="/">Home</Link>
         <Link to="/page1">Page1</Link>
         <Link to="/page2">Page2</Link>
@@ -27,7 +26,9 @@ function App() {
         </Routes>
       </div>
 
-      {myGlobal.working !== 0 ? <p>Working...</p> : <p>Idle</p>}
+      {working !== 0 ? <p>Working...</p> : <p>Idle</p>}
+
+      <TrackRender />
     </BrowserRouter>
   </div>
 }
