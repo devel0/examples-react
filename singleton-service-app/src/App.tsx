@@ -4,10 +4,9 @@ import { Home } from './pages/Home'
 import { Page1 } from './pages/Page1'
 import { Page2 } from './pages/Page2'
 import { TrackRender } from './components/TrackRender'
-import { useMyGlobalSingleton } from './services/MyGlobalSingleton'
+import { Working } from './components/Working'
 
 function App() {
-  const working = useMyGlobalSingleton(x => x.working)
 
   return <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
     <BrowserRouter>
@@ -26,7 +25,7 @@ function App() {
         </Routes>
       </div>
 
-      {working !== 0 ? <p>Working...</p> : <p>Idle</p>}
+      <Working />
 
       <TrackRender />
     </BrowserRouter>
