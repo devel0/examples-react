@@ -6,8 +6,7 @@ export const Pitfall1 = () => {
         <h3>Pitfall1</h3>
 
         <span className="note">
-            <p>
-                tracker not change in CORRECT case
+            <p>                
             </p>
         </span>
 
