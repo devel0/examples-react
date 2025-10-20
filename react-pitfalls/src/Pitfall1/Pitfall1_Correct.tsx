@@ -2,8 +2,7 @@ import { useGlobalService } from "../GlobalService"
 import { ReRenderTracker } from "../ReRenderTracker"
 import { ValueDisplayer } from "../ValueDisplayer"
 
-export const Pitfall1_Correct = () => {
-    const x = useGlobalService(x => x.unrelated)
+export const Pitfall1_Correct = () => {    
     const increment = useGlobalService(x => x.increment)
 
     return <div className="card">
