@@ -3,9 +3,6 @@
 - [requirements](#requirements)
 - [quickstart](#quickstart)
 - [examples](#examples)
-  - [test-app](#test-app)
-  - [singleton service app](#singleton-service-app)
-  - [pitfalls](#pitfalls)
 
 ## requirements
 
@@ -79,24 +76,8 @@ go to the `App.tsx` and place a breakpoint (F9) to the button onclick
 
 ## examples
 
-### test-app
-
-[code](./test-app/)
-
-basic skeleton spa                                   
-
-### singleton service app
-
-[code](./singleton-service-app/)
-
-usage of [zustand][1] to manage a singleton service
-
-keynotes:
-- [reuse][2] methods between
-
-[1]: https://github.com/pmndrs/zustand
-[2]: https://github.com/devel0/examples-react/blob/6c2faa48032c6a2951cecac2a8dee6d117e9e8fb/singleton-service-app/src/services/MyGlobalSingleton.ts#L23
-
-### pitfalls
-
-[common pitfall](./react-pitfalls)
+| example                                                    | description        |
+| ---------------------------------------------------------- | ------------------ |
+| [test-app](./test-app)                                     | basic skeleton spa |
+| [zustand react singleton service](./singleton-service-app) | zustand services   |
+| [react pitfalls](./react-pitfalls)                         | common pitfalls    |
