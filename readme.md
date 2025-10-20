@@ -28,21 +28,21 @@ echo 'export PATH=$PATH:~/opt/node/bin' >> ~/.bashrc
 to create a react app
 
 ```sh
-npm create vite@latest test-app -- --template react-ts
+pnpm create vite@latest test-app -- --template react-ts
 ```
 
 to debug then
 
 ```sh
 cd test-app
-npm i
+pnpm i
 code .
 ```
 
 from terminal of vscode
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 from vscode run/debug `create a launch.json file` and select `WebApp (Chrome)` then `Chrome (Launch)`
@@ -50,10 +50,7 @@ from vscode run/debug `create a launch.json file` and select `WebApp (Chrome)` t
 a file like following will be created
 
 ```json
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{    
     "version": "0.2.0",
     "configurations": [
         {
@@ -62,14 +59,7 @@ a file like following will be created
             "type": "chrome",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+        }        
     ]
 }
 ```
@@ -105,3 +95,4 @@ keynotes:
 
 [1]: https://github.com/pmndrs/zustand
 [2]: https://github.com/devel0/examples-react/blob/6c2faa48032c6a2951cecac2a8dee6d117e9e8fb/singleton-service-app/src/services/MyGlobalSingleton.ts#L23
+
