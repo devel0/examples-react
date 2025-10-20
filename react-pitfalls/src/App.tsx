@@ -1,13 +1,18 @@
 import { useState } from 'react'
-import './App.css'
-import { Pitfall1 } from './Pitfall1'
+import { Pitfall1 } from './Pitfall1/Pitfall1'
 
 function App() {
   const [pitfall, setPitfall] = useState(1)
 
-  if (pitfall === 1) return <Pitfall1 />
+  return <div style={{ width: '600px' }}>
+    <div style={{ display: 'flex', gap: '1rem' }}>
+      <button onClick={() => setPitfall(1)}>pitfall1</button>
+      {/* <button onClick={() => setPitfall(2)}>pitfall2</button> */}
+    </div>
+    <hr />
 
-  return null
+    {pitfall === 1 && <Pitfall1 />}    
+  </div>
 }
 
 export default App

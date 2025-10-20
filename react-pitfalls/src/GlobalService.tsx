@@ -1,15 +1,17 @@
 import { create } from "zustand"
 
 interface GlobalState {
-    some: number
+    value: number
     increment: () => void
+    unrelated: number
 }
 
 export const useGlobalService = create<GlobalState>(set => {
     return ({
-        some: 0,
+        value: 0,
         increment: () => {
-            set(state => ({ some: state.some + 1 }))
-        }
+            set(state => ({ value: state.value + 1 }))
+        },
+        unrelated: 0
     })
 })
