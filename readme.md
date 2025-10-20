@@ -5,6 +5,7 @@
 - [examples](#examples)
   - [test-app](#test-app)
   - [singleton service app](#singleton-service-app)
+  - [pitfalls](#pitfalls)
 
 ## requirements
 
@@ -96,3 +97,6 @@ keynotes:
 [1]: https://github.com/pmndrs/zustand
 [2]: https://github.com/devel0/examples-react/blob/6c2faa48032c6a2951cecac2a8dee6d117e9e8fb/singleton-service-app/src/services/MyGlobalSingleton.ts#L23
 
+### pitfalls
+
+[common pitfall](./react-pitfalls)
