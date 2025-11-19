@@ -1,8 +1,17 @@
 # examples react
 
+- [examples](#examples)
 - [requirements](#requirements)
 - [quickstart](#quickstart)
-- [examples](#examples)
+
+## examples
+
+| example                                                    | description                               |
+| ---------------------------------------------------------- | ----------------------------------------- |
+| [test-app](./test-app)                                     | basic skeleton spa                        |
+| [zustand react singleton service](./singleton-service-app) | zustand services                          |
+| [react pitfalls](./react-pitfalls)                         | common pitfalls                           |
+| [load svg url](./load-svg-url)                             | load svg from url with fill customization |
 
 ## requirements
 
@@ -74,10 +83,3 @@ go to the `App.tsx` and place a breakpoint (F9) to the button onclick
 
 ![alt text](./images/breakpoint.png)
 
-## examples
-
-| example                                                    | description        |
-| ---------------------------------------------------------- | ------------------ |
-| [test-app](./test-app)                                     | basic skeleton spa |
-| [zustand react singleton service](./singleton-service-app) | zustand services   |
-| [react pitfalls](./react-pitfalls)                         | common pitfalls    |
